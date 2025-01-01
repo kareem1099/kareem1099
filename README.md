@@ -3,7 +3,7 @@
 
 <!-- Add a GIF in the center -->
 <div align="center">
-  <img src="https://media.giphy.com/media/xT9IgIc0lryrxvqVGM/giphy.gif" alt="Fighter GIF" width="600">
+  <img src="https://wallpapercave.com/wp/wp12756497.jpg" alt="Fighter GIF" width="600">
 </div>
 
 ---
