@@ -10,7 +10,7 @@
 
 <!-- Add the second GIF before the technologies -->
 <div align="right">
-  <img src="https://pin.it/6OpLQmD8r" alt="Fighting GIF" width="500">
+  <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExcXUxam1hZmg0d25hdjBqN2JmaWtxOWQycjFnaDB1aG81YmdwNjdpZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/13HgwGsXF0aiGY/giphy.webp" alt="Fighting GIF" width="500">
 </div>
 
 ---
