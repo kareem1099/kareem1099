@@ -6,7 +6,7 @@
 
 <!-- Add a GIF in the center -->
 <div align="center">
-  <img src="https://wallpapers.com/images/high/samurai-x-2560-x-1600-background-w6jxmk19pc11j4pi.webp" alt="Fighter GIF" width="1200">
+  <img src="https://wallpapercave.com/wp/wp12756497.jpg" alt="Fighter GIF" width="1200">
 </div>
 
 ---
