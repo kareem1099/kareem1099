@@ -11,8 +11,7 @@
 <div align="right">
   <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExcXUxam1hZmg0d25hdjBqN2JmaWtxOWQycjFnaDB1aG81YmdwNjdpZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/13HgwGsXF0aiGY/giphy.webp" alt="Fighting GIF" width="500">
 </div>
-
-## 🔧 Technologies & Tools
+🔧 Technologies & Tools
 <div>
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" width="40">
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" width="40">
