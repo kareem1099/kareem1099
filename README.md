@@ -1,9 +1,16 @@
 <!-- Add a title -->
 # Deadlier than The Night , More elegant than The Dawn 
 
-<!-- Add a GIF in the center -->
+<!-- Add the GIF before the About Me section -->
 <div align="center">
   <img src="https://wallpapercave.com/wp/wp12756497.jpg" alt="Fighter GIF" width="1200">
+</div>
+
+---
+
+<!-- Add the second GIF before the technologies -->
+<div style="display: flex; justify-content: center; margin-top: 50px;">
+  <img src="https://media.giphy.com/media/3o7qE0YuMwN62LRyso/giphy.gif" alt="Fighting GIF" width="500">
 </div>
 
 ---
@@ -12,13 +19,6 @@
 - 💻 Passionate developer with a knack for solving problems.
 - 🧠 Continuously learning and exploring new technologies.
 - 🌍 Open to collaborations and exciting projects.
-
----
-
-<!-- Add the GIF on the right before the technologies -->
-<div style="display: flex; justify-content: center; margin-top: 50px;">
-  <img src="https://i.pinimg.com/originals/29/1c/55/291c5593304891ff1607d696f9f3b7a6.gif" alt="Fighting GIF" width="500">
-</div>
 
 ---
 
