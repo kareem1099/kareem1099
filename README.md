@@ -6,7 +6,7 @@
 
 <!-- Add a GIF in the center -->
 <div align="center">
-  <img src="https://media.giphy.com/media/xT9IgIc0lryrxvqVGM/giphy.gif" alt="Fighter GIF" width="600">
+  <img src="[https://www.google.com/url?sa=i&url=https%3A%2F%2Fwallpapers.com%2Fbackground%2Fsamurai-x-2560-x-1600-background-w6jxmk19pc11j4pi.html&psig=AOvVaw0JYdKMU1LYIRBDdeI5dVkG&ust=1735839056209000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCICrqLKF1YoDFQAAAAAdAAAAABAE)" alt="Fighter GIF" width="1200">
 </div>
 
 ---
