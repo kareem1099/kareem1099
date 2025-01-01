@@ -11,8 +11,14 @@
 ## About Me 🙋‍♂️
 - 💻 Passionate developer with a knack for solving problems.
 - 🧠 Continuously learning and exploring new technologies.
-- 🥊 Fighting my way through bugs and challenges daily!
 - 🌍 Open to collaborations and exciting projects.
+
+---
+
+<!-- Add the GIF on the right before the technologies -->
+<div style="display: flex; justify-content: center; margin-top: 50px;">
+  <img src="https://i.pinimg.com/originals/29/1c/55/291c5593304891ff1607d696f9f3b7a6.gif" alt="Fighting GIF" width="500">
+</div>
 
 ---
 
