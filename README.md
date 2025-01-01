@@ -6,7 +6,6 @@
   <img src="https://wallpapercave.com/wp/wp12756497.jpg" alt="Fighter GIF" width="1200">
 </div>
 
----
 
 <!-- Add the second GIF before the technologies -->
 <div align="right">
