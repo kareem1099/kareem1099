@@ -15,10 +15,6 @@
 
 ---
 
-## About Me 🙋‍♂️
-- 💻 Passionate developer with a knack for solving problems.
-- 🧠 Continuously learning and exploring new technologies.
-- 🌍 Open to collaborations and exciting projects.
 
 ---
 
