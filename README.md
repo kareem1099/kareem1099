@@ -7,7 +7,7 @@
 </div>
 
 <!-- Add the second GIF and the Technologies section side by side, adjusting position -->
-<div style="display: flex; justify-content: flex-start; align-items: center; gap: 20px;">
+<div>
 
   <!-- Technologies section on the left -->
   <div style="flex: 1; text-align: left; max-width: 50%; ">
@@ -25,8 +25,8 @@
   </div>
 
   <!-- GIF on the right -->
-  <div style="flex: 1; text-align: right; max-width: 50%;">
-    <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExcXUxam1hZmg0d25hdjBqN2JmaWtxOWQycjFnaDB1aG81YmdwNjdpZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/13HgwGsXF0aiGY/giphy.webp" alt="Fighting GIF" width="300">
+  <div style="flex: 1; align: right; max-width: 50%;">
+    <img align: right, src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExcXUxam1hZmg0d25hdjBqN2JmaWtxOWQycjFnaDB1aG81YmdwNjdpZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/13HgwGsXF0aiGY/giphy.webp" alt="Fighting GIF" width="300">
   </div>
 </div>
 
