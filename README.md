@@ -1,30 +1,29 @@
 <!-- Add a title -->
-# Deadlier than The Night , More elegant than The Dawn 
+# Deadlier than The Night, More Elegant than The Dawn
 
 <!-- Add the GIF before the About Me section -->
 <div align="center">
   <img src="https://wallpapercave.com/wp/wp12756497.jpg" alt="Fighter GIF" width="1200">
 </div>
 
-
-<!-- Add the second GIF before the technologies -->
-<div align="center">
-<div align="right">
-  <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExcXUxam1hZmg0d25hdjBqN2JmaWtxOWQycjFnaDB1aG81YmdwNjdpZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/13HgwGsXF0aiGY/giphy.webp" alt="Fighting GIF" width="600">
+<!-- Add the second GIF and the Technologies section side by side -->
+<div style="display: flex; justify-content: space-between; align-items: center;">
+  <div style="flex: 1; text-align: right; margin-right: 20px;">
+    <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExcXUxam1hZmg0d25hdjBqN2JmaWtxOWQycjFnaDB1aG81YmdwNjdpZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/13HgwGsXF0aiGY/giphy.webp" alt="Fighting GIF" width="300">
   </div>
-  <div align ="left">
-
-  ## 🔧 Technologies & Tools
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" width="40">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" width="40">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" width="40">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker" width="40">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg" alt="FastAPI" width="40">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" width="40">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg" alt="Flutter" width="40">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dart/dart-original.svg" alt="Dart" width="40">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML" width="40">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS" width="40">
+  <div style="flex: 1; text-align: left; margin-left: 20px;">
+    ## 🔧 Technologies & Tools
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" width="40">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" width="40">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" width="40">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker" width="40">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg" alt="FastAPI" width="40">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" width="40">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg" alt="Flutter" width="40">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dart/dart-original.svg" alt="Dart" width="40">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML" width="40">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS" width="40">
+  </div>
 </div>
 
 ---
