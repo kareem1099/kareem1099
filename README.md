@@ -7,10 +7,11 @@
 </div>
 
 <!-- Add the second GIF and the Technologies section side by side, adjusting position -->
-<div style="display: flex; justify-content: space-between; align-items: center;">
+<div style="display: flex; justify-content: flex-start; align-items: center; gap: 20px;">
+
   <!-- Technologies section on the left -->
-  <div style="flex: 1; text-align: left;">
-    <p>## 🔧 Technologies & Tools</p>
+  <div style="flex: 1; text-align: left; max-width: 50%; ">
+    <h2>🔧 Technologies & Tools</h2>
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" width="40">
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" width="40">
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" width="40">
@@ -24,7 +25,7 @@
   </div>
 
   <!-- GIF on the right -->
-  <div style="flex: 1; text-align: right;">
+  <div style="flex: 1; text-align: right; max-width: 50%;">
     <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExcXUxam1hZmg0d25hdjBqN2JmaWtxOWQycjFnaDB1aG81YmdwNjdpZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/13HgwGsXF0aiGY/giphy.webp" alt="Fighting GIF" width="300">
   </div>
 </div>
@@ -53,4 +54,3 @@
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/facebook/facebook-original.svg" alt="Facebook" width="40">
   </a>
 </div>
-
