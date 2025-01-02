@@ -7,10 +7,13 @@
 </div>
 
 <!-- Add the second GIF and the Technologies section side by side, adjusting position -->
-<div style="display: flex; justify-content: flex-end; align-items: center;">
-  <div style="flex: 1; text-align: right; margin-right: 20px;">
+<div style="display: flex; justify-content: space-between; align-items: center;">
+  <!-- GIF on the right -->
+  <div style="flex: 1; text-align: right;">
     <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExcXUxam1hZmg0d25hdjBqN2JmaWtxOWQycjFnaDB1aG81YmdwNjdpZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/13HgwGsXF0aiGY/giphy.webp" alt="Fighting GIF" width="300">
   </div>
+
+  <!-- Technologies section on the left of the GIF -->
   <div style="flex: 1; text-align: left; margin-left: 20px;">
     ## 🔧 Technologies & Tools
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" width="40">
