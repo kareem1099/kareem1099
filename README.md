@@ -33,11 +33,6 @@
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jetbrains/jetbrains-original.svg" alt="JetBrains" width="40">
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/anaconda/anaconda-original.svg" alt="Anaconda" width="40">
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP" width="40">
-<img src="https://img.icons8.com/color/48/000000/machine-learning.png" alt="Machine Learning" width="40">
-<img src="https://img.icons8.com/external-soft-fill-juicy-fish/60/000000/external-deep-learning-artificial-intelligence-soft-fill-soft-fill-juicy-fish.png" alt="Deep Learning" width="40">
-<img src="https://img.icons8.com/color/48/000000/render.png" alt="Render" width="40">
-<img src="https://img.icons8.com/ios-filled/50/000000/ngrok.png" alt="Ngrok" width="40">
-
 </div>
 
 ---
