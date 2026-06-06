@@ -1,15 +1,19 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kareem1099 - GitHub Profile</title>
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;700;800&display=swap');
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
 
-.gh-root {
+body {
   font-family: 'Syne', sans-serif;
   background: #0a0a0f;
   color: #e8e8f0;
   min-height: 100vh;
-  padding: 0;
   overflow-x: hidden;
 }
 
@@ -31,10 +35,17 @@
 }
 
 .scanline {
-  position: absolute;
+  position: fixed;
   inset: 0;
-  background: repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(255,255,255,0.012) 2px, rgba(255,255,255,0.012) 4px);
+  background: repeating-linear-gradient(
+    0deg,
+    transparent,
+    transparent 2px,
+    rgba(255,255,255,0.012) 2px,
+    rgba(255,255,255,0.012) 4px
+  );
   pointer-events: none;
+  z-index: 999;
 }
 
 .hero-title {
@@ -83,16 +94,6 @@
   50% { box-shadow: 0 0 0 14px rgba(147,51,234,0.04); }
 }
 
-.kemz-text {
-  font-family: 'Syne', sans-serif;
-  font-size: 1.35rem;
-  font-weight: 800;
-  letter-spacing: 0.14em;
-  color: #c084fc;
-  text-shadow: 0 0 18px rgba(192,132,252,0.4);
-  padding: 0 8px;
-}
-
 .username {
   font-family: 'Space Mono', monospace;
   font-size: 0.85rem;
@@ -109,7 +110,12 @@
   position: relative; z-index: 1;
 }
 
-.section { padding: 1.5rem 1.5rem; border-top: 0.5px solid rgba(255,255,255,0.06); }
+.section {
+  padding: 1.5rem 1.5rem;
+  border-top: 0.5px solid rgba(255,255,255,0.06);
+  max-width: 800px;
+  margin: 0 auto;
+}
 
 .section-label {
   font-family: 'Space Mono', monospace;
@@ -120,130 +126,257 @@
   margin-bottom: 1rem;
   display: flex; align-items: center; gap: 8px;
 }
-.section-label::after { content: ''; flex: 1; height: 0.5px; background: rgba(192,132,252,0.2); }
+.section-label::after {
+  content: '';
+  flex: 1;
+  height: 0.5px;
+  background: rgba(192,132,252,0.2);
+}
 
 .tech-grid { display: flex; flex-wrap: wrap; gap: 8px; }
 
 .tech-badge {
-  display: flex; align-items: center; gap: 5px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
   padding: 5px 10px;
   background: rgba(255,255,255,0.04);
   border: 0.5px solid rgba(255,255,255,0.08);
   border-radius: 6px;
-  font-size: 0.72rem; color: #a8a8c8;
-  transition: all 0.2s; cursor: default;
+  font-size: 0.72rem;
+  color: #a8a8c8;
+  transition: all 0.2s;
+  cursor: default;
   font-family: 'Space Mono', monospace;
 }
-.tech-badge:hover { background: rgba(192,132,252,0.1); border-color: rgba(192,132,252,0.3); color: #e2c8ff; transform: translateY(-1px); }
+.tech-badge:hover {
+  background: rgba(192,132,252,0.1);
+  border-color: rgba(192,132,252,0.3);
+  color: #e2c8ff;
+  transform: translateY(-1px);
+}
 .tech-badge img { width: 14px; height: 14px; object-fit: contain; }
 
 .stats-row { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
-.stat-card { background: rgba(255,255,255,0.03); border: 0.5px solid rgba(255,255,255,0.07); border-radius: 10px; overflow: hidden; }
+
+.stat-card {
+  background: rgba(255,255,255,0.03);
+  border: 0.5px solid rgba(255,255,255,0.07);
+  border-radius: 10px;
+  overflow: hidden;
+}
 .stat-card img { width: 100%; display: block; }
 
 .connect-row { display: flex; gap: 12px; flex-wrap: wrap; align-items: center; }
+
 .connect-btn {
-  display: flex; align-items: center; gap: 6px;
-  padding: 8px 14px; border-radius: 8px;
-  font-size: 0.72rem; font-family: 'Space Mono', monospace;
-  text-decoration: none; border: 0.5px solid transparent;
-  transition: all 0.2s; font-weight: 700; cursor: pointer; color: inherit; background: none;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 14px;
+  border-radius: 8px;
+  font-size: 0.72rem;
+  font-family: 'Space Mono', monospace;
+  text-decoration: none;
+  border: 0.5px solid transparent;
+  transition: all 0.2s;
+  font-weight: 700;
 }
 .connect-btn.linkedin { background: rgba(10,102,194,0.12); border-color: rgba(10,102,194,0.3); color: #60a5fa; }
-.connect-btn.linkedin:hover { background: rgba(10,102,194,0.22); }
 .connect-btn.email { background: rgba(234,67,53,0.1); border-color: rgba(234,67,53,0.25); color: #f87171; }
-.connect-btn.email:hover { background: rgba(234,67,53,0.18); }
 .connect-btn.instagram { background: rgba(193,53,132,0.1); border-color: rgba(193,53,132,0.25); color: #f0abfc; }
-.connect-btn.instagram:hover { background: rgba(193,53,132,0.18); }
 .connect-btn.facebook { background: rgba(24,119,242,0.1); border-color: rgba(24,119,242,0.25); color: #93c5fd; }
-.connect-btn.facebook:hover { background: rgba(24,119,242,0.18); }
 .connect-btn img { width: 14px; height: 14px; object-fit: contain; }
 
 .hero-img-wrap {
-  position: relative; margin: 0 1.5rem 0;
-  border-radius: 12px; overflow: hidden;
-  border: 0.5px solid rgba(192,132,252,0.15); height: 160px;
+  position: relative;
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 0 1.5rem;
 }
-.hero-img-wrap img { width: 100%; height: 100%; object-fit: cover; object-position: center 30%; filter: brightness(0.7) saturate(1.2); display: block; }
-.hero-img-overlay { position: absolute; inset: 0; background: linear-gradient(to top, rgba(10,10,15,0.85) 0%, transparent 60%); }
+.hero-img-wrap-inner {
+  border-radius: 12px;
+  overflow: hidden;
+  border: 0.5px solid rgba(192,132,252,0.15);
+  height: 160px;
+}
+.hero-img-wrap img {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  object-position: center 30%;
+  filter: brightness(0.7) saturate(1.2);
+  display: block;
+}
+.hero-img-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(10,10,15,0.85) 0%, transparent 60%);
+}
 
-.footer-line { text-align: center; padding: 1rem; font-family: 'Space Mono', monospace; font-size: 0.6rem; color: #2e2e4a; letter-spacing: 0.15em; }
+.footer-line {
+  text-align: center;
+  padding: 1rem;
+  font-family: 'Space Mono', monospace;
+  font-size: 0.6rem;
+  color: #2e2e4a;
+  letter-spacing: 0.15em;
+}
+
 .blink { animation: blink 1.2s step-end infinite; }
 @keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0; } }
 </style>
+</head>
+<body>
 
-<div class="gh-root">
-  <div class="scanline"></div>
+<div class="scanline"></div>
 
-  <div class="hero">
-    <div class="avatar-wrap">
-      <div class="avatar-ring">
-        <span class="kemz-text">KEMZ</span>
-      </div>
+<div class="hero">
+  <div class="avatar-wrap">
+    <div class="avatar-ring">
+      <svg viewBox="0 0 130 130" xmlns="http://www.w3.org/2000/svg" width="130" height="130">
+        <circle cx="65" cy="65" r="60" fill="#1a0a2e"/>
+        <circle cx="65" cy="55" r="28" fill="rgba(192,132,252,0.05)"/>
+
+        <!-- katana left -->
+        <g transform="rotate(-38, 30, 65)">
+          <rect x="28" y="8" width="3.5" height="52" rx="1" fill="#c8c8e0"/>
+          <rect x="28" y="8" width="1" height="52" rx="0.5" fill="#ffffff" opacity="0.6"/>
+          <ellipse cx="29.75" cy="62" rx="7" ry="3.5" fill="#7c3aed" opacity="0.9"/>
+          <ellipse cx="29.75" cy="62" rx="5.5" ry="2.2" fill="#a855f7" opacity="0.5"/>
+          <rect x="27" y="63" width="5.5" height="20" rx="2" fill="#3b1d6e"/>
+          <line x1="27.5" y1="67" x2="32" y2="67" stroke="#c084fc" stroke-width="1" opacity="0.7"/>
+          <line x1="27.5" y1="71" x2="32" y2="71" stroke="#c084fc" stroke-width="1" opacity="0.7"/>
+          <line x1="27.5" y1="75" x2="32" y2="75" stroke="#c084fc" stroke-width="1" opacity="0.7"/>
+          <line x1="27.5" y1="79" x2="32" y2="79" stroke="#c084fc" stroke-width="1" opacity="0.7"/>
+          <rect x="26" y="83" width="7.5" height="4" rx="2" fill="#5b21b6"/>
+        </g>
+
+        <!-- katana right -->
+        <g transform="rotate(38, 100, 65)">
+          <rect x="98.5" y="8" width="3.5" height="52" rx="1" fill="#c8c8e0"/>
+          <rect x="101" y="8" width="1" height="52" rx="0.5" fill="#ffffff" opacity="0.6"/>
+          <ellipse cx="100.25" cy="62" rx="7" ry="3.5" fill="#7c3aed" opacity="0.9"/>
+          <ellipse cx="100.25" cy="62" rx="5.5" ry="2.2" fill="#a855f7" opacity="0.5"/>
+          <rect x="97.5" y="63" width="5.5" height="20" rx="2" fill="#3b1d6e"/>
+          <line x1="98" y1="67" x2="102.5" y2="67" stroke="#c084fc" stroke-width="1" opacity="0.7"/>
+          <line x1="98" y1="71" x2="102.5" y2="71" stroke="#c084fc" stroke-width="1" opacity="0.7"/>
+          <line x1="98" y1="75" x2="102.5" y2="75" stroke="#c084fc" stroke-width="1" opacity="0.7"/>
+          <line x1="98" y1="79" x2="102.5" y2="79" stroke="#c084fc" stroke-width="1" opacity="0.7"/>
+          <rect x="96.5" y="83" width="7.5" height="4" rx="2" fill="#5b21b6"/>
+        </g>
+
+        <!-- body / kimono -->
+        <path d="M40 128 Q45 95 65 90 Q85 95 90 128 Z" fill="#1e0a3c"/>
+        <path d="M52 128 Q55 100 65 96 Q75 100 78 128 Z" fill="#2d1254"/>
+        <line x1="65" y1="96" x2="57" y2="110" stroke="#7c3aed" stroke-width="1" opacity="0.6"/>
+        <line x1="65" y1="96" x2="73" y2="110" stroke="#7c3aed" stroke-width="1" opacity="0.6"/>
+
+        <!-- neck -->
+        <rect x="60" y="72" width="10" height="14" rx="4" fill="#d4a07a"/>
+
+        <!-- head -->
+        <ellipse cx="65" cy="62" rx="18" ry="19" fill="#d4a07a"/>
+
+        <!-- helmet -->
+        <path d="M44 58 Q44 34 65 32 Q86 34 86 58 Z" fill="#1a0a2e"/>
+        <rect x="43" y="56" width="44" height="5" rx="2" fill="#2d1254"/>
+        <rect x="43" y="56" width="44" height="2" rx="1" fill="#7c3aed" opacity="0.7"/>
+        <path d="M60 34 Q65 24 70 34" fill="none" stroke="#c084fc" stroke-width="2.5"/>
+        <circle cx="65" cy="24" r="3.5" fill="#c084fc"/>
+        <path d="M44 58 Q36 54 38 44 Q42 50 44 56" fill="#1a0a2e"/>
+        <path d="M86 58 Q94 54 92 44 Q88 50 86 56" fill="#1a0a2e"/>
+        <path d="M44 60 Q40 68 42 75 Q50 70 44 60Z" fill="#160828" opacity="0.9"/>
+        <path d="M86 60 Q90 68 88 75 Q80 70 86 60Z" fill="#160828" opacity="0.9"/>
+        <line x1="55" y1="36" x2="52" y2="56" stroke="#3b1d6e" stroke-width="1" opacity="0.5"/>
+        <line x1="65" y1="33" x2="65" y2="56" stroke="#3b1d6e" stroke-width="1" opacity="0.5"/>
+        <line x1="75" y1="36" x2="78" y2="56" stroke="#3b1d6e" stroke-width="1" opacity="0.5"/>
+
+        <!-- eyes -->
+        <ellipse cx="57" cy="62" rx="4" ry="3" fill="#0a0a0f"/>
+        <ellipse cx="73" cy="62" rx="4" ry="3" fill="#0a0a0f"/>
+        <circle cx="57" cy="62" r="2" fill="#7c3aed"/>
+        <circle cx="73" cy="62" r="2" fill="#7c3aed"/>
+        <circle cx="58" cy="61" r="0.8" fill="white" opacity="0.7"/>
+        <circle cx="74" cy="61" r="0.8" fill="white" opacity="0.7"/>
+
+        <!-- face mask -->
+        <path d="M49 68 Q49 80 65 81 Q81 80 81 68 Z" fill="#160828"/>
+        <path d="M53 68 Q53 77 65 78 Q77 77 77 68 Z" fill="#1e0a3c"/>
+        <path d="M56 72 Q65 76 74 72" fill="none" stroke="#7c3aed" stroke-width="1" opacity="0.6"/>
+        <circle cx="59" cy="74" r="1.2" fill="#3b1d6e"/>
+        <circle cx="71" cy="74" r="1.2" fill="#3b1d6e"/>
+
+        <circle cx="65" cy="65" r="58" fill="none" stroke="#7c3aed" stroke-width="0.5" opacity="0.3"/>
+      </svg>
     </div>
-
-    <div class="hero-title">
-      Deadlier than the Night,<br>More Elegant than the Dawn
-      <span class="sub">Kareem Yasser · Software Engineer</span>
-    </div>
-    <div class="username" style="margin-top:1rem"><span>@</span>Kareem1099</div>
-    <div class="tagline">Full Stack · ML Enthusiast · Cairo, EG</div>
   </div>
 
-  <div class="hero-img-wrap">
-    <img src="https://wallpapercave.com/wp/wp12756497.jpg" alt="Cover" onerror="this.style.display='none'">
+  <div class="hero-title">
+    Deadlier than the Night,<br>More Elegant than the Dawn
+    <span class="sub">Kareem Yasser · Software Engineer</span>
+  </div>
+  <div class="username" style="margin-top:1rem"><span>@</span>Kareem1099</div>
+  <div class="tagline">Full Stack · ML Enthusiast · Cairo, EG</div>
+</div>
+
+<div class="hero-img-wrap">
+  <div class="hero-img-wrap-inner">
+    <img src="https://wallpapercave.com/wp/wp12756497.jpg" alt="Cover">
     <div class="hero-img-overlay"></div>
   </div>
-
-  <div class="section">
-    <div class="section-label">Technologies & Tools</div>
-    <div class="tech-grid">
-      <div class="tech-badge"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg">Python</div>
-      <div class="tech-badge"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg">JavaScript</div>
-      <div class="tech-badge"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg">Docker</div>
-      <div class="tech-badge"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg">FastAPI</div>
-      <div class="tech-badge"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg">MySQL</div>
-      <div class="tech-badge"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg">Flutter</div>
-      <div class="tech-badge"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dart/dart-original.svg">Dart</div>
-      <div class="tech-badge"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg">HTML5</div>
-      <div class="tech-badge"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg">CSS3</div>
-      <div class="tech-badge"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg">Java</div>
-      <div class="tech-badge"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg">C++</div>
-      <div class="tech-badge"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/r/r-original.svg">R</div>
-      <div class="tech-badge"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/anaconda/anaconda-original.svg">Anaconda</div>
-      <div class="tech-badge"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg">PHP</div>
-      <div class="tech-badge"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg">VS Code</div>
-      <div class="tech-badge"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pycharm/pycharm-original.svg">PyCharm</div>
-    </div>
-  </div>
-
-  <div class="section">
-    <div class="section-label">GitHub Stats</div>
-    <div class="stats-row">
-      <div class="stat-card">
-        <img src="https://github-readme-stats.vercel.app/api?username=Kareem1099&show_icons=true&theme=dark&bg_color=0a0a0f&title_color=c084fc&icon_color=7c3aed&text_color=a8a8c8&border_color=1e1e2e" alt="GitHub Stats">
-      </div>
-      <div class="stat-card">
-        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Kareem1099&layout=compact&theme=dark&bg_color=0a0a0f&title_color=c084fc&text_color=a8a8c8&border_color=1e1e2e" alt="Top Languages">
-      </div>
-    </div>
-  </div>
-
-  <div class="section">
-    <div class="section-label">Connect</div>
-    <div class="connect-row">
-      <a class="connect-btn linkedin" href="https://www.linkedin.com/in/kareem-yasser-464ab222a" target="_blank">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg">LinkedIn
-      </a>
-      <a class="connect-btn email" href="mailto:Kareemyasser1054@gmail.com">✉ Email</a>
-      <a class="connect-btn instagram" href="https://www.instagram.com/karemyassser/" target="_blank">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png">Instagram
-      </a>
-      <a class="connect-btn facebook" href="https://www.facebook.com/kareem.yasser.9862273/" target="_blank">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/facebook/facebook-original.svg">Facebook
-      </a>
-    </div>
-  </div>
-
-  <div class="footer-line">KAREEM1099 · CAIRO, EG · <span class="blink">█</span></div>
 </div>
+
+<div class="section">
+  <div class="section-label">Technologies & Tools</div>
+  <div class="tech-grid">
+    <div class="tech-badge"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg">Python</div>
+    <div class="tech-badge"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg">JavaScript</div>
+    <div class="tech-badge"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg">Docker</div>
+    <div class="tech-badge"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg">FastAPI</div>
+    <div class="tech-badge"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg">MySQL</div>
+    <div class="tech-badge"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg">Flutter</div>
+    <div class="tech-badge"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dart/dart-original.svg">Dart</div>
+    <div class="tech-badge"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg">HTML5</div>
+    <div class="tech-badge"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg">CSS3</div>
+    <div class="tech-badge"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg">Java</div>
+    <div class="tech-badge"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg">C++</div>
+    <div class="tech-badge"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/r/r-original.svg">R</div>
+    <div class="tech-badge"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/anaconda/anaconda-original.svg">Anaconda</div>
+    <div class="tech-badge"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg">PHP</div>
+    <div class="tech-badge"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg">VS Code</div>
+    <div class="tech-badge"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pycharm/pycharm-original.svg">PyCharm</div>
+  </div>
+</div>
+
+<div class="section">
+  <div class="section-label">GitHub Stats</div>
+  <div class="stats-row">
+    <div class="stat-card">
+      <img src="https://github-readme-stats.vercel.app/api?username=Kareem1099&show_icons=true&theme=dark&bg_color=0a0a0f&title_color=c084fc&icon_color=7c3aed&text_color=a8a8c8&border_color=1e1e2e" alt="GitHub Stats">
+    </div>
+    <div class="stat-card">
+      <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Kareem1099&layout=compact&theme=dark&bg_color=0a0a0f&title_color=c084fc&text_color=a8a8c8&border_color=1e1e2e" alt="Top Languages">
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <div class="section-label">Connect</div>
+  <div class="connect-row">
+    <a class="connect-btn linkedin" href="https://www.linkedin.com/in/kareem-yasser-464ab222a" target="_blank">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg">LinkedIn
+    </a>
+    <a class="connect-btn email" href="mailto:Kareemyasser1054@gmail.com">✉ Email</a>
+    <a class="connect-btn instagram" href="https://www.instagram.com/karemyassser/" target="_blank">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png">Instagram
+    </a>
+    <a class="connect-btn facebook" href="https://www.facebook.com/kareem.yasser.9862273/" target="_blank">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/facebook/facebook-original.svg">Facebook
+    </a>
+  </div>
+</div>
+
+<div class="footer-line">KAREEM1099 · CAIRO, EG · <span class="blink">█</span></div>
+
+</body>
+</html>
