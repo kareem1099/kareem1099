@@ -45,4 +45,3 @@
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/facebook/facebook-original.svg" alt="Facebook" width="40">
   </a>
 </div> 
- روقلي بروفايل الجيت هب دا خليه اصيع واروش وكدا
